@@ -1,0 +1,30 @@
+@use 'variables'
+
+@mixin btn 
+    padding: 1rem 1.2rem
+    color: variables.$text-color 
+    background: variables.$gradient 
+    text-decoration: none
+    border-radius: 3rem
+    transition: 0.5s ease-in
+    &:hover
+        scale: 1.1
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin gradient-border
+    content: ""
+    background: variables.$gradient
+    height: 3px
+    width: 30%
+
+@mixin mobile
+    @media(max-width: 425px)
+        @content
+
+@mixin tablet
+    @media (min-width: 426px) and (max-width: 1024px)
+        @content

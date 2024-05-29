@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #271b31;
+}
+
+a, svg {
+  transition: 0.4s;
+}

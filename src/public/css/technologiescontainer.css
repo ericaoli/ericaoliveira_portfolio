@@ -1,0 +1,68 @@
+.technologies-container {
+  margin-bottom: 1rem;
+}
+.technologies-container .technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  .technologies-container .technologies-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .technologies-container .technologies-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.technologies-container .technology-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  width: 45%;
+  border-radius: 5px;
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  .technologies-container .technology-card {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .technologies-container .technology-card {
+    width: 90%;
+  }
+}
+.technologies-container .technology-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.technologies-container .technology-card svg {
+  font-size: 6rem;
+}
+.technologies-container #html svg {
+  color: #e44d26;
+}
+.technologies-container #css svg {
+  color: #1572b6;
+}
+.technologies-container #js svg {
+  color: #f0db4f;
+}
+.technologies-container #node svg {
+  color: #83cd29;
+}
+.technologies-container #mysql svg {
+  color: #00618a;
+}
+.technologies-container #react svg {
+  color: #61dafb;
+}
+.technologies-container #sass svg {
+  color: #CF649A;
+}

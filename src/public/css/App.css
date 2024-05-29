@@ -1,0 +1,36 @@
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3rem;
+}
+@media (max-width: 425px) {
+  #portfolio {
+    justify-content: center;
+    width: 100;
+  }
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  #portfolio {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+#portfolio h1 {
+  width: 100%;
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(90deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 425px) {
+  #portfolio h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  #portfolio h1 {
+    font-size: 4.5rem;
+  }
+}
